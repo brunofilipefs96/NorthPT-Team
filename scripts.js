@@ -1,9 +1,8 @@
 const toggleThemeBtn = document.getElementById('toggleTheme');
 const body = document.body;
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const savedTheme = localStorage.getItem('theme');
-
     if (savedTheme === 'dark-mode') {
         body.classList.add('dark-mode');
         toggleThemeBtn.textContent = '☀️';
@@ -11,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
         body.classList.add('light-mode');
         toggleThemeBtn.textContent = '🌙';
     }
+
+    loadContent('pt');
 });
 
 toggleThemeBtn.addEventListener('click', () => {
@@ -28,22 +29,19 @@ toggleThemeBtn.addEventListener('click', () => {
 });
 
 function switchLanguage(language) {
-    const title = document.getElementById('team-title');
-    const description = document.getElementById('team-description');
-    const projectDescription = document.getElementById('project-description');
-
-    if (language === 'en') {
-        title.innerText = 'NorthPT Team';
-        description.innerText = 'We are NorthPT Team, a duo of developers based in the North of Portugal. Our mission is to build innovative digital solutions, offering expertise in web development.';
-
-        projectDescription.innerHTML = `
-            The Top Performance & Rehab Gym project began as a final course project at ATEC. However, we continued to collaborate with the client to finalize and launch the site. This project includes comprehensive gym management features, product sales, training packages, and more.`;
-    } else if (language === 'pt') {
-        title.innerText = 'NorthPT Team';
-        description.innerText = 'Somos a NorthPT Team, uma equipa de dois programadores, localizada no Norte de Portugal. A nossa missão é desenvolver soluções digitais inovadoras, com foco em desenvolvimento web.';
-
-        projectDescription.innerHTML = `
-            O projeto do Ginásio Top Performance & Rehab começou como um trabalho final de curso na ATEC. No entanto, continuamos a colaborar com o cliente para finalizar e lançar o site. Este projeto inclui funcionalidades abrangentes para a gestão do ginásio, venda de produtos, pacotes de treino, e muito mais.`;
-    }
+    loadContent(language);
 }
 
+function loadContent(language) {
+    fetch('Assets/Data/content.json')
+        .then(response => response.json())
+        .then(data => {
+            const content = data[language];
+            document.getElementById('team-title').innerText = content.teamTitle;
+            document.getElementById('team-description').innerText = content.teamDescription;
+            document.getElementById('project-description').innerText = content.projectDescription;
+        })
+        .catch(error => {
+            console.error('Erro ao carregar o conteúdo:', error);
+        });
+}

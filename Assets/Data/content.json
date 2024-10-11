@@ -1,0 +1,12 @@
+{
+  "pt": {
+    "teamTitle": "NorthPT Team",
+    "teamDescription": "Somos a NorthPT Team, uma equipa de dois programadores, localizada no norte de Portugal. A nossa missão é desenvolver soluções digitais inovadoras, com foco em desenvolvimento web.",
+    "projectDescription": "O projeto do Ginásio Top Performance & Rehab começou como um trabalho final de curso na ATEC. No entanto, continuamos a colaborar com o cliente para finalizar e lançar o site. Este projeto inclui funcionalidades abrangentes para a gestão do ginásio, venda de produtos, pacotes de treino, e muito mais."
+  },
+  "en": {
+    "teamTitle": "NorthPT Team",
+    "teamDescription": "We are NorthPT Team, a duo of developers based in the North of Portugal. Our mission is to build innovative digital solutions, offering expertise in web development.",
+    "projectDescription": "The Top Performance & Rehab Gym project began as a final course project at ATEC. However, we continued to collaborate with the client to finalize and launch the site. This project includes comprehensive gym management features, product sales, training packages, and more."
+  }
+}
