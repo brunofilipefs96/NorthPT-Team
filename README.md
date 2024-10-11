@@ -10,7 +10,7 @@ We are **NorthPT Team**, a duo of developers based in the north of Portugal. Our
 
 ### Who we are:
 - **Bruno Silva** – Full Stack Developer
-- **Nelson** – Backend Developer
+- **Nelson** – Full Stack Developer
 
 ---
 
@@ -24,4 +24,4 @@ Somos a **NorthPT Team**, uma equipa de dois programadores, localizada no norte 
 
 ### Quem somos:
 - **Bruno Silva** – Desenvolvedor Full Stack
-- **Nelson** – Desenvolvedor Backend
+- **Nelson** – Desenvolvedor Full Stack
