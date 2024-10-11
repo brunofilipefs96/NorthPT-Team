@@ -1,0 +1,111 @@
+:root {
+    --background-light: #f3f4f6;
+    --background-dark: #1f2937;
+    --text-light: #1f2937;
+    --text-dark: #ffffff;
+}
+
+body.light-mode {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar {
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+body.dark-mode .navbar {
+    background-color: #374151;
+}
+
+.section {
+    background-color: #f3f4f6;
+    transition: background-color 0.5s ease;
+}
+
+body.dark-mode .section {
+    background-color: #1f2937;
+    color: var(--text-dark);
+}
+
+.card {
+    background-color: white;
+    color: var(--text-light);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+body.dark-mode .card {
+    background-color: #374151;
+    color: var(--text-dark);
+}
+
+.card p {
+    color: #4b5563;
+}
+
+body.dark-mode .card p {
+    color: #d1d5db;
+}
+
+.footer {
+    background-color: white;
+    color: #6b7280;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode .footer {
+    background-color: #374151;
+    color: white;
+}
+
+.card a {
+    font-size: 1.5rem;
+    transition: color 0.5s ease;
+}
+
+.card a svg {
+    fill: black;
+    transition: fill 0.5s ease;
+}
+
+body.light-mode .card a svg {
+    fill: black;
+}
+
+body.dark-mode .card a svg {
+    fill: white;
+}
+
+.card a:hover {
+    transform: scale(1.1);
+}
+
+.scale-hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scale-hover:hover {
+    transform: scale(1.05);
+}
+
+.bg-lime-500 {
+    background-color: #84cc16;
+}
+
+.bg-lime-600:hover {
+    background-color: #65a30d;
+}
