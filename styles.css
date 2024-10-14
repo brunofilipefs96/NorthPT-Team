@@ -105,6 +105,36 @@ body.dark-mode .card a svg {
     background-color: #84cc16;
 }
 
+.bg-cyan-400{
+    background-color: rgb(34 211 238);
+}
+
 .bg-lime-600:hover {
     background-color: #65a30d;
+}
+
+.relative {
+    position: relative;
+    overflow: hidden;
+    min-height: 40vh;
+}
+
+.absolute.inset-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .text-5xl {
+        font-size: 3rem;
+    }
+
+    .text-7xl {
+        font-size: 4.5rem;
+    }
 }

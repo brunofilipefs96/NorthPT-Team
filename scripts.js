@@ -38,10 +38,18 @@ function loadContent(language) {
         .then(data => {
             const content = data[language];
             document.getElementById('team-title').innerText = content.teamTitle;
+            document.getElementById('team-title-navbar').innerText = content.teamTitle;
             document.getElementById('team-description').innerText = content.teamDescription;
+            document.getElementById('about-title').innerText = content.aboutTitle;
+            document.getElementById('project-title').innerText = content.projectTitle;
             document.getElementById('project-description').innerText = content.projectDescription;
+            document.getElementById('footer-text').innerText = content.footerText;
+            document.getElementById('contact-title').innerText = content.contactTitle;
+            document.getElementById('contact-message').innerText = content.contactMessage;
+            document.querySelector('.view-button').innerText = content.viewButton;
         })
         .catch(error => {
             console.error('Erro ao carregar o conteúdo:', error);
         });
 }
+
