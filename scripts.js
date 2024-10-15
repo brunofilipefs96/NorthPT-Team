@@ -46,10 +46,13 @@ function loadContent(language) {
             document.getElementById('footer-text').innerText = content.footerText;
             document.getElementById('contact-title').innerText = content.contactTitle;
             document.getElementById('contact-message').innerText = content.contactMessage;
-            document.querySelector('.view-button').innerText = content.viewButton;
+            const viewButton = document.querySelector('.view-button');
+            viewButton.innerText = content.viewButton;
+            viewButton.disabled = true;
         })
         .catch(error => {
             console.error('Erro ao carregar o conteúdo:', error);
         });
 }
+
 
