@@ -14,7 +14,21 @@
     .text-7xl {
         font-size: 4.5rem;
     }
+    .responsive-logo {
+        width: 300px;
+    }
+
+    .logo-glow {
+        height: 60vh;
+    }
 }
+
+.logo-glow {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.6);
+    max-width: 100%;
+    height: auto;
+}
+
 
 body.light-mode {
     background-color: var(--background-light);
@@ -149,5 +163,13 @@ body.dark-mode .card a svg {
 .view-button[disabled]:hover {
     background-color: #9ca3af;
 }
+
+.responsive-logo {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+}
+
+
 
 

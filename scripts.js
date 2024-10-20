@@ -1,14 +1,17 @@
 const toggleThemeBtn = document.getElementById('toggleTheme');
 const body = document.body;
+const logo = document.getElementById('logo');
 
 document.addEventListener("DOMContentLoaded", function () {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark-mode') {
         body.classList.add('dark-mode');
         toggleThemeBtn.textContent = '☀️';
+        logo.src = 'Assets/Images/topperformancerehab-dark.png';
     } else {
         body.classList.add('light-mode');
         toggleThemeBtn.textContent = '🌙';
+        logo.src = 'Assets/Images/topperformancerehab-light.png';
     }
 
     loadContent('pt');
@@ -19,11 +22,13 @@ toggleThemeBtn.addEventListener('click', () => {
         body.classList.remove('dark-mode');
         body.classList.add('light-mode');
         toggleThemeBtn.textContent = '🌙';
+        logo.src = 'Assets/Images/topperformancerehab-light.png';
         localStorage.setItem('theme', 'light-mode');
     } else {
         body.classList.remove('light-mode');
         body.classList.add('dark-mode');
         toggleThemeBtn.textContent = '☀️';
+        logo.src = 'Assets/Images/topperformancerehab-dark.png';
         localStorage.setItem('theme', 'dark-mode');
     }
 });
@@ -34,12 +39,15 @@ function switchLanguage(language) {
 
 function loadContent(language) {
     fetch('Assets/Data/content.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao carregar o JSON');
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log('Conteúdo carregado:', data);
             const content = data[language];
-            document.getElementById('team-title').innerText = content.teamTitle;
-            document.getElementById('team-title-navbar').innerText = content.teamTitle;
-            document.getElementById('team-description').innerText = content.teamDescription;
             document.getElementById('about-title').innerText = content.aboutTitle;
             document.getElementById('project-title').innerText = content.projectTitle;
             document.getElementById('project-description').innerText = content.projectDescription;
@@ -54,5 +62,4 @@ function loadContent(language) {
             console.error('Erro ao carregar o conteúdo:', error);
         });
 }
-
 
