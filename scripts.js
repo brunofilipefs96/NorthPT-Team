@@ -54,12 +54,12 @@ function loadContent(language) {
             document.getElementById('footer-text').innerText = content.footerText;
             document.getElementById('contact-title').innerText = content.contactTitle;
             document.getElementById('contact-message').innerText = content.contactMessage;
-            const viewButton = document.querySelector('.view-button');
-            viewButton.innerText = content.viewButton;
-            viewButton.disabled = true;
+
+            const visitWebsiteButton = document.querySelector('.view-button');
+            visitWebsiteButton.innerText = content.visitWebsiteButton;
+            visitWebsiteButton.disabled = false;
         })
         .catch(error => {
             console.error('Erro ao carregar o conteúdo:', error);
         });
 }
-

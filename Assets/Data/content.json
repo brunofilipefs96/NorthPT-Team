@@ -2,9 +2,9 @@
   "pt": {
     "aboutTitle": "Quem Somos",
     "projectTitle": "Projetos",
-    "projectDescription": "O Projeto Top Performance & Rehab foi realizado no âmbito do projeto final do curso de Programação e Gestão de Sistemas Informáticos (Nível 5) da Academia de Formação ATEC. Este projeto teve como objetivo inicial satisfazer as necessidades de um cliente na construção de um site para um negócio e teve continuidade, para além do período de formação, por parte de Bruno Silva e Nélson Ferreira. O site inclui funcionalidades abrangentes para a gestão de um ginásio que inclui venda de produtos, packs de treino, aulas personalizadas, entre outras. Atualmente encontra-se na fase final de implementação e o lançamento está previsto para breve.",
+    "projectDescription": "O Projeto Top Performance & Rehab foi realizado no âmbito do projeto final do curso de Programação e Gestão de Sistemas Informáticos (Nível 5) da Academia de Formação ATEC. Este projeto teve como objetivo inicial satisfazer as necessidades de um cliente na construção de um site para um negócio e teve continuidade, para além do período de formação, por parte de Bruno Silva e Nélson Ferreira. O site inclui funcionalidades abrangentes para a gestão de um ginásio que inclui venda de produtos, packs de treino, aulas personalizadas, entre outras.",
     "footerText": "© 2024 NorthPT Team. Todos os direitos reservados.",
-    "viewButton": "Disponível Brevemente",
+    "visitWebsiteButton": "Visitar Site",
     "contactTitle": "Contacta-nos",
     "contactMessage": "Entre em contato connosco para mais informações."
   },
@@ -13,7 +13,7 @@
     "projectTitle": "Projects",
     "projectDescription": "The Top Performance & Rehab project was completed as part of the final assignment for the Computer Systems Programming and Management course (Level 5) at the ATEC Training Academy. The initial objective of this project was to meet the requirements of a client in developing a website for a business. Following the conclusion of the training period, Bruno Silva and Nélson Ferreira continued the project. The website offers a comprehensive suite of features for managing a gym, including product sales, training packs, personalised classes and more.",
     "footerText": "© 2024 NorthPT Team. All rights reserved.",
-    "viewButton": "Coming Soon",
+    "visitWebsiteButton": "Visit Website",
     "contactTitle": "Contact Us",
     "contactMessage": "Get in touch with us for more information."
   }
